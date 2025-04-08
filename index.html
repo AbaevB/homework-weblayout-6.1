@@ -213,9 +213,45 @@
     <div class="modal modal--active">
       <div class="modal__wrapper">
         <div class="modal__content">
-          <form action="">
-            <input type="color" name="" id="">
+          <button class="modal__close" type="button" aria-label="Закрыть окно">
+            <svg class="modal__close-icon" width="20" height="20">
+              <use xlink:href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">
+            Оставьте контакты&nbsp;&mdash; и&nbsp;мы&nbsp;с&nbsp;вами свяжемся
+          </h2>
+          <form class="modal__form" method="post" action="#">
+           <div class="custom-input">
+            <input type="tel" class="custom-input__field">
+           </div>
+           <div class="custom-input">
+            <input type="tel" class="custom-input__field">
+           </div>
+           <div class="custom-input">
+            <input type="tel" class="custom-input__field">
+           </div>
+           <div class="custom-textarea">
+            <textarea class="custom-textarea__field" name="user-message" id="user-message"></textarea>
+           </div>
+           <div class="custom-checkbox">
+            <input type="checkbox" name="user-confirm" id="user-confirm">
+           </div>
+           <button class="btn  modal__form-btn" type="submit">
+            Отправить
+           </button>
           </form>
+          <div class="modal__success">
+            <span class="modal__success-text">
+              отправлено
+            </span>
+            <svg class="modal__success-icon" width="16" height="16">
+              <use xlink:href="images/sprite.svg#icon-close"></use>
+            </svg>
+            <span class="modal__success-close">
+              закроется через 3&nbsp;секунды
+            </span>
+          </div>
         </div>
       </div>
     </div>
