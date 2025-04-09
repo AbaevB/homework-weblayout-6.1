@@ -222,25 +222,62 @@
             Оставьте контакты&nbsp;&mdash; и&nbsp;мы&nbsp;с&nbsp;вами свяжемся
           </h2>
           <form class="modal__form" method="post" action="#">
+
+            <div class="custom-input">
+              <label class="custom-input__label" for="user-phone">
+                <span class="custom-input__label-text">
+                  Телефон *
+                </span>
+              </label>
+              <input class="custom-input__field" id="user-phone" name="user-phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" type="tel" required>
+             </div>
+
            <div class="custom-input">
-            <input type="tel" class="custom-input__field">
+            <label class="custom-input__label" for="user-name">
+              <span class="custom-input__label-text">
+                Имя
+              </span>
+            </label>
+            <input class="custom-input__field" id="user-name" name="user-name" type="text">
            </div>
+
            <div class="custom-input">
-            <input type="tel" class="custom-input__field">
+            <label class="custom-input__label" for="user-mail">
+              <span class="custom-input__label-text">
+                E-mail
+              </span>
+            </label>
+            <input class="custom-input__field" id="user-mail" name="user-mail" type="email">
            </div>
-           <div class="custom-input">
-            <input type="tel" class="custom-input__field">
+
+           <div class="modal__form-bottom">
+            <div class="custom-textarea">
+              <label class="custom-textarea__label" for="user-message">
+                <span class="custom-textarea__label-text">
+                  Сообщение
+                </span>
+              </label>
+              <textarea class="custom-textarea__field" name="user-message" id="user-message" volume="Меня интересует помещение №114 площадью 529 кв. м. на 9 этаже с видом на реку"></textarea>
+             </div>
+             <div class="custom-checkbox">
+              <input type="checkbox" name="user-confirm" id="user-confirm">
+              <label class="custom-checkbox__label" for="user-confirm">
+                <span class="custom-checkbox__label-text">
+                  Я&nbsp;даю согласие на&nbsp;обработку моих персональных данных согласно
+                  <a class="custom-checkbox__link" href="#">
+                    политике конфиденциальности
+                  </a>
+
+                </span>
+              </label>
+             </div>
+             <button class="modal__form-btn modal__form-btn--disabled" type="submit">
+              Отправить
+             </button>
            </div>
-           <div class="custom-textarea">
-            <textarea class="custom-textarea__field" name="user-message" id="user-message"></textarea>
-           </div>
-           <div class="custom-checkbox">
-            <input type="checkbox" name="user-confirm" id="user-confirm">
-           </div>
-           <button class="btn  modal__form-btn" type="submit">
-            Отправить
-           </button>
+
           </form>
+
           <div class="modal__success">
             <span class="modal__success-text">
               отправлено

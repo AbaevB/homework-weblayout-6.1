@@ -74,4 +74,27 @@
 .modal__form  {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.modal__form-bottom {
+  display: flex;
+  grid-column: span 3;
+}
+
+.modal__form-btn  {
+  width: 200px;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 115%;
+  border: none;
+  color: #fff;
+  background-color: #3C52E6;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal__form-btn--disabled  {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(60, 82, 230, 0.5);
 }
