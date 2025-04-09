@@ -1,0 +1,33 @@
+.custom-textarea {
+  position: relative;
+  min-width: 460px;
+  min-height: 114px;
+
+}
+
+.custom-textarea__field {
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: none;
+  width: 460px;
+  min-height: 90px;
+  border-bottom: 1px solid #C8C8CA;
+  resize: none;
+  outline: none;
+  color: black;
+}
+.custom-textarea__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.custom-textarea__label-text {
+  z-index: 10;
+  font-size: 12px;
+  line-height: 120%;
+  color: #99999E;
+}
+

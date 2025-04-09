@@ -9,6 +9,9 @@
   border: none;
   border-bottom: 1px solid #C8C8CA;
   font-family: inherit;
+  font-size: 16px;
+  line-height: 125%;
+  color: #5A5A5A;
   outline: none;
 }
 
@@ -17,6 +20,7 @@
   top: 0;
   left: 0;
 }
+
 
 .custom-input__label-text {
   font-size: 12px;

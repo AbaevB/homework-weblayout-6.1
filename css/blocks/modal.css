@@ -61,6 +61,17 @@
   color: #fff;
 }
 
+.modal__close:hover {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(60, 82, 230, 0.5);
+}
+
+.modal__close:focus-visible {
+  background-color: #fff;
+  color: #3C52E6;
+  outline: 1px solid #3C52E6;
+}
+
 .modal__title {
   margin: 0;
   margin-bottom: 60px;
@@ -78,8 +89,17 @@
 }
 
 .modal__form-bottom {
+  align-items: flex-end;
   display: flex;
   grid-column: span 3;
+}
+
+.modal-form__textarea {
+  margin-right: 40px;
+}
+
+.modal-form__checkbox {
+  margin-right: 15px;
 }
 
 .modal__form-btn  {
@@ -97,4 +117,5 @@
 .modal__form-btn--disabled  {
   color: rgba(255, 255, 255, 0.5);
   background-color: rgba(60, 82, 230, 0.5);
+  pointer-events: none;
 }
