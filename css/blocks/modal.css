@@ -42,4 +42,59 @@
 	max-width: 1200px;
 	min-height: 660px;
 	background-color: #FFFFFF;
+  padding: 168px 120px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 100%;
+  background-color: #3C52E6;
+  cursor: pointer;
+  color: #fff;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #180000;
+  text-transform: uppercase;
+}
+
+.modal__form  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.modal__form-bottom {
+  display: flex;
+  grid-column: span 3;
+}
+
+.modal__form-btn  {
+  width: 200px;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 115%;
+  border: none;
+  color: #fff;
+  background-color: #3C52E6;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal__form-btn--disabled  {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(60, 82, 230, 0.5);
 }
