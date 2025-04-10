@@ -13,4 +13,6 @@
 @import "blocks/footer.css";
 @import "blocks/socials.css";
 @import "blocks/modal.css";
-
+@import "blocks/custom-input.css";
+@import "blocks/custom-textarea.css";
+@import "blocks/custom-checkbox.css";

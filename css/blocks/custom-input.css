@@ -1,0 +1,48 @@
+.custom-input {
+  position: relative;
+  width: 280px;
+  min-height: 54px;
+}
+
+.custom-input__field {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #C8C8CA;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 125%;
+  color: #5A5A5A;
+  outline: none;
+}
+
+.custom-input__field:hover {
+  border-color: #3C52E6;
+}
+
+.custom-input__field:hover+.custom-input__label {
+  color: #3C52E6;
+}
+
+.custom-input__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #99999E;
+}
+
+.custom-input__field:focus-visible {
+  border-color: #000;
+}
+
+.custom-input__field:focus-visible+.custom-input__label {
+  color: #000;
+}
+
+
+.custom-input__label-text {
+  font-size: 12px;
+  line-height: 120%;
+
+}
