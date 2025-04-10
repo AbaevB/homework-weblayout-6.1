@@ -18,16 +18,33 @@
   outline: none;
   color: black;
 }
+
+.custom-textarea__field:hover {
+  border-color: #3C52E6;
+}
+
+.custom-textarea__field:hover + .custom-textarea__label {
+  color: #3C52E6;
+}
+
+.custom-textarea__field:focus-visible {
+  border-color: #000;
+}
+
+.custom-textarea__field:focus-visible + .custom-textarea__label {
+  color: #000;
+}
+
 .custom-textarea__label {
   position: absolute;
   top: 0;
   left: 0;
+  color: #99999E;
 }
 
 .custom-textarea__label-text {
-  z-index: 10;
   font-size: 12px;
   line-height: 120%;
-  color: #99999E;
+
 }
 

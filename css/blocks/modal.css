@@ -146,6 +146,10 @@
   gap: 5px;
 }
 
+.modal__success-icon {
+  pointer-events: none;
+}
+
 .modal__success-close {
   font-size: 12px;
   line-height: 120%;
