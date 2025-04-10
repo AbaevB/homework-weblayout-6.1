@@ -23,7 +23,7 @@
   border-color: #3C52E6;
 }
 
-.custom-textarea__field:hover + .custom-textarea__label {
+.custom-textarea__field:hover+.custom-textarea__label {
   color: #3C52E6;
 }
 
@@ -31,7 +31,7 @@
   border-color: #000;
 }
 
-.custom-textarea__field:focus-visible + .custom-textarea__label {
+.custom-textarea__field:focus-visible+.custom-textarea__label {
   color: #000;
 }
 
@@ -47,4 +47,3 @@
   line-height: 120%;
 
 }
-
