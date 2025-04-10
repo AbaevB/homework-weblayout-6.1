@@ -260,7 +260,7 @@
               <textarea class="custom-textarea__field" name="user-message" id="user-message" placeholder="Меня интересует помещение №114 площадью 529 кв. м. на 9 этаже с видом на реку"></textarea>
              </div>
              <div class="custom-checkbox modal-form__checkbox">
-              <input class="custom-checkbox__field" type="checkbox" name="user-confirm" id="user-confirm" required>
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" name="user-confirm" id="user-confirm" required>
               <label class="custom-checkbox__label" for="user-confirm">
                 <span class="custom-checkbox__label-text">
                   Я&nbsp;даю согласие на&nbsp;обработку моих персональных данных согласно
@@ -278,16 +278,19 @@
 
           </form>
 
-          <div class="modal__success">
+          <div class="modal__success modal__success--active">
             <span class="modal__success-text">
               отправлено
             </span>
-            <svg class="modal__success-icon" width="16" height="16">
-              <use xlink:href="images/sprite.svg#icon-close"></use>
-            </svg>
-            <span class="modal__success-close">
-              закроется через 3&nbsp;секунды
-            </span>
+            <div class="modal__success-bottom">
+              <svg class="modal__success-icon" width="16" height="16">
+                <use xlink:href="images/sprite.svg#icon-clock"></use>
+              </svg>
+              <span class="modal__success-close">
+                закроется через 3&nbsp;секунды
+              </span>
+            </div>
+
           </div>
         </div>
       </div>

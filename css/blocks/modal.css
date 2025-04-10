@@ -119,3 +119,39 @@
   background-color: rgba(60, 82, 230, 0.5);
   pointer-events: none;
 }
+
+.modal__success {
+  display: none;
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  padding: 16px 41px;
+  text-align: center;
+  align-items: center;
+  background-color: #3C52E6;
+}
+
+.modal__success-text  {
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.modal__success-bottom  {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.modal__success-close {
+  font-size: 12px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.modal__success--active {
+  display: block;
+}
